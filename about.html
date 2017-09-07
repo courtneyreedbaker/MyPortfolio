@@ -1,0 +1,146 @@
+<!DOCTYPE HTML>
+<!--
+  Phantom by HTML5 UP
+  html5up.net | @ajlkn
+  Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+  <head>
+    <title>Courtney Baker | About Me</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta property="og:image" content="http://i1163.photobucket.com/albums/q547/philosalience/bggradientog_zpsst4mlzzp.png">
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Wrapper -->
+      <div id="wrapper">
+
+        <!-- Header -->
+          <header id="header">
+            <div class="inner">
+
+              <!-- Nav -->
+                <nav>
+                  <ul>
+                    <li><a href="#menu">Menu</a></li>
+                  </ul>
+                </nav>
+
+            </div>
+          </header>
+
+<!-- Menu -->
+          <nav id="menu" class="small">
+            <h2>Menu</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="resume.html">Resume</a></li>
+              <li><a href="recommendations.html">Recommendations</a></li>
+              <li id="toggleTitle">Projects <i class="fa fa-angle-down" aria-hidden="true"></i></li>
+              <li class="projects projectsClass"><a href="gwfbp.html">Global Warming for Busy People</a></li>
+              <li class="projects projectsClass"><a href="conclient.html">Large Tech Client</a></li>
+              <li class="projects projectsClass"><a href="integra.html">Integra Training</a></li>
+              <li class="projects projectsClass"><a href="lflt.html">Live Fit Live Travel</a></li>
+              <li class="projects projectsClass"><a href="photostar.html">Photostar</a></li>
+              <li class="projects projectsClass"><a href="fh.html">ForeverHome</a></li>
+            </ul>
+          </nav>
+
+        <!-- Main -->
+        <div id="main">
+          <div class="inner">
+            <h1 style="font-weight: 300; margin-top: 1em; margin-bottom: .5em;"><b>Courtney Baker</b> | About Me</h1>
+                <img class="imgabout" src="images/meblack.png">
+                <div class="project-properties desctextabout">
+                <h6><i class="fa fa-check-square-o" style="color: #21B8DA; padding-right: 3px;" aria-hidden="true"></i>Background in Evaluation</h6>
+                <p>Prior to working UX, I worked as an educational evaluator. This has given me insight in how research is conducted and a strong focus on the importance of user research in my design practice.
+                </p>
+                <h6><i class="fa fa-users" style="color: #21B8DA; padding-right: 3px;" aria-hidden="true"></i> <b>UX Design Consultant</b></h6>
+                <p>During my time as a consultant, I've worked with a wide variety of clients from ideating start ups to large enterprise companies like IBM. My clients consistently comment on their satisfaction with my services and on my ability to deliver thorough solutions. 
+                </p>
+                <h6><i class="fa fa-line-chart" style="color: #21B8DA; padding-right: 3px;" aria-hidden="true"></i> <b>Current Goals and Efforts</b></h6>
+                <p>I am actively looking to join a UX design team full-time. In the mean time, I am continuing to broaden my toolkit by working as a user researcher with a start up called u-Tapp and taking a Visual Design course at the UC Berkeley Extension in San Francisco this Summer.</p>
+                </div>
+                </div>
+                </div>
+
+          <a href="resume.html"><button style="width:100%; color: white;">Continue: Resume</button></a>
+          <footer id="footer">
+            <div class="inner">
+              <section>
+                <h2>Get in touch.</h2>
+                <ul class="icons">
+                  <li><a href="https://www.linkedin.com/in/courtneyreedbaker" target="_blank" class="icon style2 fa-linkedin"><span class="label">LinkedIn</span></a></li>
+                  <li><a href="https://twitter.com/courtney_ux" target="_blank" class="icon style2 fa-twitter"><span class="label">Twitter</span></a></li>
+                  <li><a href="https://www.behance.net/courtneyreedbaker" target="_blank" class="icon style2 fa-behance"><span class="label">Behance</span></a></li>
+                  <li><a href="mailto:contact.me@courtneyreedbaker.com" target="_blank" class="icon style2 fa-envelope-o"><span class="label">Email</span></a></li>
+                </ul>
+              </section>
+              <section>
+            <div class="small">
+            <a href="index.html" class="whitetext">All Projects</a><br>
+            <a href="gwfbp.html" class="whitetext">Global Warming for Busy People</a><br>
+            <a href="conclient.html" class="whitetext">Large Tech Client</a><br>
+            <a href="integra.html" class="whitetext">Integra Training</a><br>
+            <a href="lflt.html" class="whitetext">Live Fit Live Travel</a><br>
+            <a href="photostar.html" class="whitetext">Photostar</a><br>
+            <a href="fh.html" class="whitetext">ForeverHome</a><br>
+            </div>
+          </section>
+              <ul class="copyright">
+                <li>&copy; Courtney Reed Baker - 2017</li>
+              </ul>
+            </div>
+          </footer>
+
+      </div>
+
+    <!-- Scripts -->
+      <script src="assets/js/jquery.min.js"></script>
+      <script src="assets/js/skel.min.js"></script>
+      <script src="assets/js/util.js"></script>
+      <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+      <script src="assets/js/main.js"></script>
+      <script>
+            //toggleProjects
+            var toggleProjects = function(){
+
+              //create functions
+              var projectsList = document.getElementsByClassName('projects');
+              var changeIcon = document.querySelector('#toggleTitle i');
+
+              // if(projectsList[0].style.display=='none'){
+              if(!projectsList[0].classList.contains('projectsClass')){
+                //changeIcon down
+                changeIcon.classList.remove('fa-angle-right');
+                changeIcon.classList.add('fa-angle-down');
+                //reappear
+                for(var i=0; i<projectsList.length; i++){
+                  // projectsList[i].style.display='';
+                  projectsList[i].classList.add('projectsClass');
+                  projectsList[i].classList.remove('projectsClass2');
+                }
+
+              } else {
+                //changeIcon right
+                changeIcon.classList.remove('fa-angle-down');
+                changeIcon.classList.add('fa-angle-right');
+
+                //remove class fa-angle-down and add fa-angle-up
+                //disappear
+                for(var i=0; i<projectsList.length; i++){
+                  // projectsList[i].style.display='none';
+                  projectsList[i].classList.add('projectsClass2');
+                  projectsList[i].classList.remove('projectsClass');
+                }
+
+              }
+            };
+
+            //event listener for click
+            document.getElementById('toggleTitle').addEventListener('click', toggleProjects);
+          </script>
+  </body>
+</html>
